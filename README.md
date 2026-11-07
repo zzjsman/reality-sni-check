@@ -43,7 +43,7 @@ bash reality-sni-check.sh --region HK --xray /usr/local/bin/xray
 独立实现，没有执行或复制第三方检测脚本。参考：
 
 - [REALITY 官方文档](https://xtls.github.io/en/config/transports/reality.html)
-- [233boy/Xray 默认域名库](https://github.com/233boy/Xray/blob/66e04223735ba551762fa08cf46dce57827bc6c6/src/core.sh)：www.amazon.com、www.ebay.com、www.paypal.com、aws.amazon.com
+- [233boy/Xray 默认域名库](https://github.com/233boy/Xray/blob/66e04223735ba551762fa08cf46dce57827bc6c6/src/core.sh)：`www.amazon.com`、`www.ebay.com`、`www.paypal.com`、`aws.amazon.com`
 - [SNI-TLS-test](https://github.com/harenaNow/SNI-TLS-test)：作为方法比较参考。单独成功的 TLS 请求或 curl HTTP/2 输出不足以证明全部条件。
 
 ```bash

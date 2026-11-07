@@ -51,7 +51,11 @@ class TLSIntegration(unittest.TestCase):
                 http=m.probe('localhost','4',3,mode='http',port=port,cafile=cert)
                 self.assertEqual(http['http_status'],200)
                 group=m.group_probe('localhost',SimpleNamespace(port=port,family='4',cafile=cert,timeout=3))
-                self.assertTrue(group['ok'],group)
+                help_run=subprocess.run(['openssl','s_client','-help'],capture_output=True,text=True)
+                if '-verify_hostname' in help_run.stdout + help_run.stderr:
+                    self.assertTrue(group['ok'],group)
+                else:
+                    self.assertFalse(group['ok'], 'Unsupported CLI must not be accepted')
                 worker=m.bounded('localhost',SimpleNamespace(port=port,family='4',cafile=cert,timeout=3),'tls')
                 self.assertTrue(worker['ok'],worker)
             finally:
