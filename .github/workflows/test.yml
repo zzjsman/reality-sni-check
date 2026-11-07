@@ -1,0 +1,17 @@
+name: tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline unit and TLS integration tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Verify standalone launcher
+        run: |
+          python3 build.py
+          git diff --exit-code -- run.sh
+          bash -n run.sh
+          bash run.sh --help

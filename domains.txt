@@ -1,0 +1,76 @@
+# Apple
+gateway.icloud.com
+itunes.apple.com
+swdist.apple.com
+swcdn.apple.com
+updates.cdn-apple.com
+mensura.cdn-apple.com
+osxapps.itunes.apple.com
+aod.itunes.apple.com
+# Mozilla
+download-installer.cdn.mozilla.net
+addons.mozilla.org
+# CDN
+s0.awsstatic.com
+d1.awsstatic.com
+cdn-dynmedia-1.microsoft.com
+# Amazon / media
+images-na.ssl-images-amazon.com
+m.media-amazon.com
+player.live-video.net
+# Anime / game
+one-piece.com
+lol.secure.dyn.riotcdn.net
+www.lovelive-anime.jp
+# NVIDIA
+academy.nvidia.com
+# Microsoft
+software.download.prss.microsoft.com
+# Google: control candidates; not presumed unblocked
+dl.google.com
+www.google-analytics.com
+# Universities
+www.caltech.edu
+www.calstatela.edu
+www.suny.edu
+www.suffolk.edu
+# Technology
+www.python.org
+vuejs-jp.org
+vuejs.org
+zh-hk.vuejs.org
+react.dev
+www.java.com
+www.oracle.com
+www.mysql.com
+www.mongodb.com
+redis.io
+# DNS infrastructure: do not presume an HTTPS target
+cname.vercel-dns.com
+vercel-dns.com
+# Other
+www.swift.com
+www.cisco.com
+www.asus.com
+www.samsung.com
+www.amd.com
+www.umcg.nl
+www.fom-international.com
+www.u-can.co.jp
+github.io
+# Earlier backup candidates
+www.apple.com
+www.bing.com
+www.samsung.com
+www.nvidia.com
+www.ibm.com
+www.sony.com
+www.adobe.com
+www.intel.com
+www.dell.com
+www.autodesk.com
+# 233boy/Xray built-in candidates, reviewed 2026-11-07
+www.amazon.com
+www.ebay.com
+www.paypal.com
+aws.amazon.com
